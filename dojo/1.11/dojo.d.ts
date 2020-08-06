@@ -1344,6 +1344,12 @@ declare namespace dojo {
 		 * or explicit 'places' parameter.  The value [true,false] makes the fractional portion optional.
 		 */
 		fractional?: boolean | [boolean, boolean];
+		
+		/**
+		 * number of decimal places to accept: Infinity, a positive number, or
+		 * a range "n,m".  Defined by pattern or Infinity if pattern not provided.
+		 */
+		places?: number | string;
 	}
 
 	interface RealNumberRegexpFlags {
